@@ -3,18 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD131 - Dynamic Web Fundamentals - Kingsley E. Isong</title>
-    <meta name="description" content="A dynamic website created by Kingsley Isong in fulfilment of the course requirement for WDD 131 - Dynamic Web Fundamentals"
+    <title>WDD131: Dynamic Web Fundamentals - Kingsley E. Isong</title>
+    <meta name="description" content="A dynamic website created by Kingsley Isong in fulfilment of the course requirement for WDD 131 - Dynamic Web Fundamentals">
     <meta name="author" content="Kingsley Isong">  
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
 </head>
 <body>
     <!-- Header -->
     <header>
+      <div class="header-top">
         <h1>
-            <span id="course-title">WDD 131 - Dynamic Web Fundamentals</span>-
-            <span class="highlight">Kingsley E. Isong</span>
+            <span id="course-title">WDD 131: Dynamic Web Fundamentals</span>
+            - <span class="highlight">Kingsley E. Isong</span>
         </h1>
+      </div>
         <nav>
             <ul>
                 <li><a href="www.linkedin.com/in/kingsley-isong-a6b223107">LinkedIn</a></li>
@@ -32,16 +38,17 @@
         <div class="bio">
           <p>My name is Kingsley Isong, my friends also call me SaintKedro. I am a Nigerian and live in Uyo, Nigeria with my family. I am currently working remotely as a Product Manager with a Digital Consulting Agency while pursuing a Software Development Degree at BYU-Idaho through BYU-Pathway Worldwide. I and my wife are expecting our first child.</p>
           
-          <h3>Uyo, Nigeria</h3>
+          <h3 class="section-title">Uyo, Nigeria</h3>
+
           <div class="location">
             <figure>
-              <img src="nigeria-flag.png" alt="Official Flag of Nigeria">
+              <img src="images/nigeria-flag.jpeg" alt="Official Flag of Nigeria">
               <figcaption>Official Flag of Nigeria</figcaption>
             </figure>
-            <p>Nigeria, often called the "Giant of Africa," is the most populous country on the continent with over 220 million people. Located in West Africa, it is home to more than 250 ethnic groups, including Hausa, Yoruba, and Igbo, making it one of the most culturally diverse nations in the world. Blessed with abundant natural resources like oil and gas, Nigeria plays a key role in Africa’s economy while also gaining global recognition through its vibrant music, film, and entrepreneurial industries.</p>
+            <p>Nigeria, often called the "Giant of Africa," is the most populous country on the continent with over 220 million people. Located in West Africa, it is home to more than 250 ethnic groups, including Hausa, Yoruba, and Igbo, making it one of the most culturally diverse nations in the world. </p>
           </div>
         </div>
-        <div class="profile-photo"> <img src="profile.jpg" alt="Kingsley E. Isong">
+        <div class="profile-photo"> <img src="images/profile.webp" alt="Kingsley E. Isong">
         </div>
       </div>
     </section>
@@ -64,7 +71,10 @@
   <footer>
     <p> &copy; <span id="currentyear"></span> Kingsley E. Isong | Nigeria</p>
     <p id="lastModified"></p>
-` </footer>
+  </footer>
+
+  <!-- Link to your external JavaScript -->
+  <script src="scripts/getdates.js"></script>
 
 </body>
 
