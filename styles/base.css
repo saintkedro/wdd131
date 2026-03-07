@@ -15,9 +15,9 @@ body {
 /* ===== Header Split ===== */
 .header-top {
   background-color: #004d40;  
-  /* color: white; */
-  /* text-align: center; */
-  /* padding: 1rem; */
+  color: white;
+  text-align: center;
+  padding: 1rem;
 }
 
 header {
@@ -157,13 +157,13 @@ main {
   align-items: center;
 }
 
-
+/* 
 .location {
     display: flex;
     align-items: flex-start;
     gap: 1rem;
     margin-top: 1rem;
-}
+} */
 
 .location figure {
   flex-shrink: 0;
