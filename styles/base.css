@@ -96,8 +96,8 @@ main {
 
 .card a {
   color: #4da6ff; /* light blue link color */
-  text-decoration: line;
-  padding: 0.5rem
+  text-decoration: none;
+  padding: 0.5rem;
 }
 
 .card ul {
