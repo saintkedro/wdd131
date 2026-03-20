@@ -30,16 +30,26 @@ nav ul {
     list-style: none;
     gap: 10px;
     background-color: #4b0f6b;
+    align-items: center;
+    width: 100%;
+
 }
 
 nav ul.open {
     display: flex;
 }
 
+nav ul li {
+    width: 100%;
+}
+
 nav a {
     color: white;
     text-decoration: none;
     font-size: 14px;
+    display: block;
+    padding: 1rem;
+    width: 100%;
 }
 
 nav a:hover {
@@ -58,12 +68,12 @@ nav a:hover {
 }
 
 main {
-    width: 100%;
-    margin: 20px 0;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 main h2 {
-    margin-bottom: 20px;
+    margin: 20px;
 }
 
 .gallery {

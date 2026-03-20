@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Temple Album</title>
-    <meta name="description" content="Gallery of Temples">
+    <meta name="description" content="An album of the Temples of Jesus Christ of Latterday Saints' Temples">
     <meta name="author" content="Kingsley Isong">
     <!-- Mobile First -->
     <link rel="stylesheet" 
-    href="styles\temples.css">
+    href="styles/temples.css">
     <!-- Large Screens -->
     <link rel="stylesheet" href="styles/temples-large.css">
 
@@ -23,15 +23,20 @@
     <header>
         <div class="nav-container">
             <h1>Temple Album</h1>
-            <button class="menu-toggle">☰</button>
+
             <nav>
-                <ul>
+                <div class="menu-bar">
+                    <ul>
                     <li><a href="#">Home</a></li>
                     <li><a href="#">Old</a></li>
                     <li><a href="#">New</a></li>
                     <li><a href="#">Large</a></li>
                     <li><a href="#">Small</a></li>
-                </ul> 
+                    </ul> 
+
+                    <button class="menu-toggle">☰</button>
+                </div>
+            
             </nav>
         </div>     
     </header>
@@ -83,7 +88,7 @@
 
     <footer>
         <p> &copy; <span id="currentyear"></span> Kingsley E. Isong | Nigeria</p>
-        <p Last Modified: <span id="lastModified"></span></p>
+        <p>Last Modified: <span id="lastModified"></span></p>
     </footer>
     
 </body>
