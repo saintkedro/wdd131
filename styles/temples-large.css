@@ -1,0 +1,31 @@
+@media (min-width: 768px) {
+
+    /* Hide hamburger */
+    .menu-toggle {
+        display: none;
+        
+    }
+
+    /* Show nav horizontally */
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    /* Restore centered layout */
+    .nav-container {
+        width: 80%;
+        margin: auto;
+    }
+
+    main {
+        width: 80%;
+        margin: 20px auto;
+    }
+
+    /* 3-column gallery */
+    .gallery {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

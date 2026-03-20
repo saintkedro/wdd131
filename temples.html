@@ -3,9 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Temple Album</title>
+    <meta name="description" content="Gallery of Temples">
+    <meta name="author" content="Kingsley Isong">
+    <!-- Mobile First -->
+    <link rel="stylesheet" 
+    href="styles\temples.css">
+    <!-- Large Screens -->
+    <link rel="stylesheet" href="styles/temples-large.css">
+
+    <script src="scripts/temples.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
+
 <body>
+    
+    <header>
+        <div class="nav-container">
+            <h1>Temple Album</h1>
+            <button class="menu-toggle">☰</button>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Old</a></li>
+                    <li><a href="#">New</a></li>
+                    <li><a href="#">Large</a></li>
+                    <li><a href="#">Small</a></li>
+                </ul> 
+            </nav>
+        </div>     
+    </header>
+    
+    <main>
+        <h2>Home</h2>    
+        
+        <section class="gallery">
+            <figure>
+                <img src="images/lehi-utah-temple.jpg" alt="Lehi Utah Temple">
+                <figcaption>Lehi Utah</figcaption>
+            </figure>
+            <figure>
+                <img src="images/provo-utah-temple.jpg" alt="Provo Utah Temple">
+                <figcaption>Provo Utah</figcaption>
+            </figure>
+            <figure>
+                <img src="images/oakland-california-temple.jpg" alt="Oakland California Temple">
+                <figcaption> Oakland California</figcaption>
+            </figure>
+            
+            <figure>
+                <img src="images/lehi-utah-temple.jpg" alt="Lehi Utah Temple">
+                <figcaption>Lehi Utah</figcaption>
+            </figure>
+            <figure>
+                <img src="images/provo-utah-temple.jpg" alt="Provo Utah Temple">
+                <figcaption>Provo Utah</figcaption>
+            </figure>
+            <figure>
+                <img src="images/oakland-california-temple.jpg" alt="Oakland California Temple">
+                <figcaption> Oakland California</figcaption>
+            </figure>
+            
+            <figure>
+                <img src="images/lehi-utah-temple.jpg" alt="Lehi Utah Temple">
+                <figcaption>Lehi Utah</figcaption>
+            </figure>
+            <figure>
+                <img src="images/provo-utah-temple.jpg" alt="Provo Utah Temple">
+                <figcaption>Provo Utah</figcaption>
+            </figure>
+            <figure>
+                <img src="images/oakland-california-temple.jpg" alt="Oakland California Temple">
+                <figcaption> Oakland California</figcaption>
+            </figure>
+        </section>
+    </main>
+
+    <footer>
+        <p> &copy; <span id="currentyear"></span> Kingsley E. Isong | Nigeria</p>
+        <p Last Modified: <span id="lastModified"></span></p>
+    </footer>
     
 </body>
 </html>
