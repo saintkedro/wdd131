@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nigeria - Country Information</title>
+    <meta name="description" content="Weather Information about Nigeria">
+    <meta name="author" content="Kingsley Isong">
+    <link rel="stylesheet" 
+    href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Nigeria</h1>
+    </header>
+
+    <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/hero-large.webp" media="(min-width: 768px)">
+                <img src="images/hero-mobile.webp" alt="Bird perched on a branch in a natural environment" class="hero-img">
+            </picture>
+            
+            <section class="data-card">
+                <h2>Data</h2>
+                <div class="data-content">
+                    <p><strong>Area:</strong> 923,768 sq km</p>
+                    <p><strong>Population:</strong> 232,700,000 </p>
+                    <p><strong>Capital:</strong> Abuja</p>
+                    <p><strong>Languages:</strong> English</p>
+                    <p><strong>Currency:</strong> Nigerian Naira</p>
+                    <p><strong>Time Zone:</strong> GMT+1</p>
+                    <p><strong>Calling Code:</strong> +234</p>
+                    <p><strong>Internet TLD:</strong> .ng</p>
+                </div>
+            </section>
+
+            <section class="weather-card">
+                <h2 class="weather-header">Weather</h2>
+                <div class="weather-icon-mobile">
+                    <img src="images/partly-cloudy.svg" alt="Partly Cloudy Icon">
+                </div>
+                <div class="weather-stats">
+                    <p>Temperature: <span id="temp">5</span>°C</p>
+                    <p>Conditions: Partly Cloudy</p>
+                    <p>Wind Speed: <span id="wind">10</span> km/h</p>
+                    <p>Wind Chill: <span id="windchill"></span></p>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy;<span id="year"></span> Kingsley Isong | Uyo, Nigeria</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

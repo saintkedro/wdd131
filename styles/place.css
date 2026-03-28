@@ -1,0 +1,82 @@
+/* Global CSS Variables */
+:root {
+    --primary-color: #04580f;
+    --accent-color: #85ffa3;
+    --ng-color: #ffffff;
+    --card-bg: rgba(255, 255, 255, 0.9);
+    --font-main: 'Roboto', sans-serif;
+}
+
+body {
+    font-family: var(--font-main);
+    margin: 0;
+    color: #333;
+}
+
+header, footer {
+    background-color: var(--primary-color);
+    color: var(--ng-color);
+    text-align: center;
+    padding: 1rem;
+    border-bottom: 4px solid var(--accent-color);
+}
+
+.hero-img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Mobile Layout (Default) */
+.data-card, .weather-card {
+    padding: 1.5rem;
+    margin: 1rem auto;
+    width: 90%;
+    border: 1px solid #ddd;
+}
+
+.data-card h2, .weather-card h2 {
+    color: var(--mg-green);
+    border-bottom: 1px solid var(--mg-green);
+    margin-bottom: 0.5rem;
+}
+
+.weather-icon-mobile img {
+    width: 80px;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Media Query for Desktop */
+@media screen and (min-width: 768px) {
+    .hero {
+        position: relative;
+    }
+
+    .data-card {
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        width: 300px;
+        background-color: var(--card-bg);
+    }
+
+    .weather-card {
+        position: absolute;
+        bottom: 30px;
+        right: 30px;
+        width: 280px;
+        background-color: var(--card-bg);
+    }
+
+    /* Requirement: Pseudo-element for large view weather icon */
+    .weather-header::after {
+        content: " ⛅";
+        font-size: 1.2rem;
+    }
+
+    /* Hide the mobile SVG in large view to use the emoticon */
+    .weather-icon-mobile {
+        display: none;
+    }
+}
