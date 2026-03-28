@@ -1,6 +1,6 @@
 /* Global CSS Variables */
 :root {
-    --primary-color: #04580f;
+    --primary-color: #011f05;
     --accent-color: #85ffa3;
     --ng-color: #ffffff;
     --card-bg: rgba(255, 255, 255, 0.9);
@@ -69,7 +69,7 @@ header, footer {
         background-color: var(--card-bg);
     }
 
-    /* Requirement: Pseudo-element for large view weather icon */
+    /* Pseudo-element for large view weather icon */
     .weather-header::after {
         content: " ⛅";
         font-size: 1.2rem;
