@@ -1,0 +1,104 @@
+/* --- Global CSS Variables --- */
+:root {
+    --primary-color: #011f05;
+    --accent-color: #004611;
+    --ng-color: #ffffff;
+    --card-bg: rgba(255, 255, 255, 0.9);
+    --font-main: 'Roboto', sans-serif;
+}
+
+body {
+    font-family: var(--font-main);
+    margin: 0;
+    color: #333;
+}
+
+header, footer {
+    background-color: var(--primary-color);
+    color: var(--ng-color);
+    text-align: center;
+    padding: 1rem;
+}
+
+/* --- Mobile Layout (Default) --- */
+.hero-img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.data-card, .weather-card {
+    padding: 1.5rem;
+    margin: 1rem auto;
+    width: 90%;
+    border: 1px solid #ddd;
+    background-color: var(--ng-color);
+    text-align: center;
+}
+
+.data-card h2, .weather-card h2 {
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--accent-color);
+    margin-bottom: 0.5rem;
+}
+
+.weather-icon-mobile img {
+    width: 80px;
+    display: block;
+    margin: 0 auto;
+}
+
+/* --- Media Query for Desktop (Floating Cards) --- */
+@media screen and (min-width: 768px) {
+    .hero {
+        position: relative;
+    }
+
+    .data-card, .weather-card {
+        position: absolute;
+        padding: 0; /* Clear mobile padding for full-width header */
+        border: none; /* Remove mobile border */
+        background-color: var(--card-bg); /* Use transparent variable */
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.4); /* Floating Shadow */
+        overflow: hidden; /* Keeps header corners tidy */
+    }
+
+    /* Floating Positions */
+    .data-card {
+        top: 30px;
+        left: 30px;
+        width: 300px;
+    }
+
+    .weather-card {
+        bottom: 30px;
+        right: 30px;
+        width: 280px;
+    }
+
+    /* Floating Header Style */
+    .data-card h2, .weather-card h2 {
+        background-color: var(--accent-color); /* Solid header background */
+        color: var(--ng-color); /* White text for contrast */
+        margin: 0;
+        padding: 0.8rem;
+        text-align: center;
+        border-bottom: none;
+    }
+
+    /* Body padding for content inside the floating card */
+    .card-body {
+        padding: 1rem 1.5rem;
+    }
+
+    /* Requirement: Pseudo-element weather icon */
+    .weather-header::after {
+        content: " ⛅";
+        font-size: 1.2rem;
+    }
+
+    /* Hide the mobile SVG in large view */
+    .weather-icon-mobile {
+        display: none;
+    }
+}
