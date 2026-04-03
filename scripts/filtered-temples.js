@@ -86,9 +86,9 @@ const temples = [
   templeName: "Paris France",
   location: "Paris, France",
   dedicated: "2017, May, 21",
-  area: 44000,
+  area: 44175,
   imageUrl:
-  "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/paris-france/400x250/paris-france-temple-lds-403038-wallpaper.jpg"
+  "https://churchofjesuschristtemples.org/assets/img/temples/paris-france-temple/paris-france-temple-2056.jpg"
 },
 {
   templeName: "Accra Ghana",
@@ -96,7 +96,7 @@ const temples = [
   dedicated: "2004, January, 11",
   area: 17500,
   imageUrl:
-  "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/accra-ghana/400x250/accra-ghana-temple-lds-249027-wallpaper.jpg"
+  "https://churchofjesuschristtemples.org/assets/img/temples/accra-ghana-temple/accra-ghana-temple-13760-main.jpg"
 }
 ];
 
