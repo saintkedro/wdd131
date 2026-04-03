@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Roboto, sans-serif;
+    background-color: #eee;
+    text-align: center;
+}
+
+header {
+    background-color: #0b1f3a;
+    color: white;
+    padding: 15px 0;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 1rem;
+}
+
+nav ul {
+    list-style: none;
+    gap: 10px;
+    background-color: #0b1f3a;
+    align-items: center;
+    width: 100%;
+
+}
+
+nav ul li {
+    width: 100%;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    display: block;
+    padding: 1rem;
+    width: 100%;
+}
+
+nav a:hover {
+    padding: 1rem;
+    text-decoration: none;
+    color: yellow;
+}
+
+.nav-menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 100%;
+    height: 100vh;
+    background-color: #0b1f3a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: right 0.3s ease;
+    
+}
+
+.menu-bar ul {
+    display: flex;
+    gap: 15px;
+    list-style: none;
+}
+
+.menu-toggle {
+    display: block;
+    font-size: 24px;
+    background: none;
+    border: none;
+    color:white;
+    cursor: pointer;
+    
+}
+
+/* SHOW MENU */
+.nav-menu.open {
+    right: 0;
+}
+
+/* MENU LIST */
+.nav-menu ul {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+}
+
+/* LINKS */
+.nav-menu a {
+    font-size: 1.5rem;
+    color: white;
+}
+
+/* CLOSE BUTTON */
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+main h2 {
+    margin: 20px;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px;
+}
+
+.temple-card {
+  background: #eaeaea;
+  padding: 15px;
+  text-align: center;
+  border-radius: 6px;
+}
+
+.temple-card h3 {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+.temple-card p {
+  margin: 4px 0;
+  font-size: 0.9rem;
+}
+
+.label {
+  color: purple;
+  font-variant: small-caps;
+  font-weight: bold;
+}
+
+.temple-card img {
+  margin-top: 15px;
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+footer {
+    background-color: #0b1f3a;
+    color:white;
+    padding: 10px;
+    margin-top: 30px;
+    font-size: 12px;
+}

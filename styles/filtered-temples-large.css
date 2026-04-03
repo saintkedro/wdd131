@@ -1,0 +1,60 @@
+@media (min-width: 768px) {
+
+    /* Hide hamburger */
+    .menu-toggle,
+    .close-btn {
+        display: none;
+        
+    }
+
+    .nav-menu {
+        position: static;
+        height: auto;
+        width: auto;
+        background: none;
+        display: block;
+        right: 0;
+    }
+
+    
+    .nav-menu ul {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        width: auto;
+    }
+
+    /* Restore centered layout */
+    .nav-container {
+        width: 80%;
+        margin: auto;
+    }
+
+    main {
+        width: 80%;
+        margin: 20px auto;
+    }
+
+    /* 3-column gallery */
+    .gallery {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .nav-menu ul li {
+    width: auto;
+}
+
+.nav-menu button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+}
+
+.nav-menu button:hover {
+    color: yellow;
+}
+
+}
