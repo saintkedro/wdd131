@@ -155,7 +155,7 @@ main h2 {
 .temple-card img {
   margin-top: 15px;
   width: 100%;
-  height: auto;
+  height: 150px;
   border-radius: 4px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
