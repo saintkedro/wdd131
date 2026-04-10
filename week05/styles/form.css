@@ -1,0 +1,185 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  max-width: 400px;
+  margin: auto;
+  background: #d3cdd1;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+/* Header */
+h1 {
+  background: #3b0a2a;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin: 0;
+}
+
+/* Form */
+.review-form {
+  padding: 15px;
+}
+
+.review-form > label {
+  display: block;
+  margin-top: 12px;
+  font-weight: bold;
+}
+
+label span {
+  font-weight: normal;
+  font-size: 0.85em;
+}
+
+/* Inputs */
+select,
+input[type="date"],
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: none;
+  border-radius: 3px;
+  box-sizing: border-box;
+}
+
+input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 15px;
+  background: #3b0a2a; 
+  color: white;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+input[type="submit"]:hover {
+  background: #5a1041;
+}
+
+/* Rating */
+.rating {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 8px;
+  align-items: center;
+}
+
+.rating label {
+  font-size: 18px;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  cursor: pointer; 
+}
+
+.rating label:hover {
+  transform: scale(1.1);
+}
+
+/* Checkboxes */
+.checkbox-group {
+  margin-top: 8px;
+}
+
+.checkbox-group label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: normal;
+  margin-top: 5px;
+}
+
+/* Footer */
+footer {
+  background: #3b0a2a;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  font-size: 0.8em;
+}
+
+.review-confirmation {
+    text-align: center;
+    padding: 30px 20px;
+}
+
+.success-icon {
+    background-color: #00ce67;
+    color: white;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 30px;
+    border-radius: 12px;
+    margin: 0 auto 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.subtitle {
+    color: #555;
+    font-size: 0.95em;
+    margin-bottom: 25px;
+}
+
+/* The Review Counter Card */
+.counter-card {
+    background-color: #f0efff; 
+    border-radius: 15px;
+    padding: 25px;
+    margin: 25px 0;
+    border: 1px solid #e0defa;
+}
+
+.counter-card p {
+    margin: 5px 0;
+    color: #444;
+}
+
+#review-count {
+    display: block;
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: #3b0a2a;
+    margin: 10px 0;
+}
+
+.tagline {
+    font-weight: bold;
+    color: #3b0a2a;
+    font-size: 0.9em;
+}
+
+.footer-msg {
+    font-size: 0.9em;
+    line-height: 1.5;
+    color: #333;
+    margin: 20px 0;
+}
+
+.btn-submit {
+    display: inline-block;
+    background-color: #8d3673;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.btn-submit:hover {
+    background-color: #3b0a2a;
+}
