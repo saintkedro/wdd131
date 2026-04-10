@@ -4,13 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product Review</title>
-    <meta name="description" content="Product review form">
+    <meta name="description" content="Submit your product review including rating, features, and feedback to help improve user experience.">
     <meta name="author" content="Kingsley Isong">
     <link rel="stylesheet" href="styles/form.css">
     <script src="scripts/form.js" defer></script>
 </head>
 
 <body>
+  <header>
+  <h1>Product Review</h1>
+</header>
     <div class="container">
       <h1>Product Review</h1>
 
@@ -23,7 +26,7 @@
         </select>
 
         <!-- Rating -->
-        <label for="overallRating">Overall Rating*</label>
+        <label>Overall Rating*</label>
         <div class="rating">
           <label for="rating1">
             <input type="radio" id="rating1" name="rating" value="1" required>
@@ -31,22 +34,22 @@
           </label>
 
           <label for="rating2">
-            <input type="radio" id="rating2" name="rating" value="2">
+            <input type="radio" id="rating2" name="rating" value="2" required>
             &star;&star;
           </label>
 
           <label for="rating3">
-            <input type="radio" id="rating3" name="rating" value="3">
+            <input type="radio" id="rating3" name="rating" value="3" required>
             &star;&star;&star;
           </label>
 
           <label for="rating4">
-            <input type="radio" id="rating4" name="rating" value="4">
+            <input type="radio" id="rating4" name="rating" value="4" required>
             &star;&star;&star;&star;
           </label>
 
           <label for="rating5">
-            <input type="radio" id="rating5" name="rating" value="5">
+            <input type="radio" id="rating5" name="rating" value="5" required>
             &star;&star;&star;&star;&star;
           </label>
         </div>
@@ -64,8 +67,8 @@
         <label for="durability"> 
           <input type="checkbox" id="durability" name="features" value="Durability"> Durability</label>
 
-        <label for="easeofuse">
-          <input type="checkbox" id="easeofus" name="features" value="Ease of Use"> Ease of Use</label>
+        <label for="easeOfUse">
+          <input type="checkbox" id="easeOfUse" name="features" value="Ease of Use"> Ease of Use</label>
 
         <label for="performance">
           <input type="checkbox" id="performance" name="features" value="Performance"> Performance</label>
