@@ -1,0 +1,90 @@
+/* Color Schema Variables */
+:root {
+    --primary-color: #2D5A27; /* Grass Green */
+    --secondary-color: #E07A5F; /* Clay Orange */
+    --accent-color: #F4D35E; /* Tennis Yellow */
+    --text-color: #333333;
+    --bg-color: #fcfcfc;
+    
+    /* Typography */
+    --heading-font: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+    --body-font: Arial, Helvetica, sans-serif;
+}
+
+body {
+    font-family: var(--body-font);
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+    margin: 0;
+    padding: 20px;
+}
+
+header, main, footer {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+header {
+    text-align: center;
+    border-bottom: 3px solid var(--primary-color);
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+}
+
+h1, h2, h3 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+
+section {
+    margin-bottom: 40px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+}
+
+.color-palette {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.color-swatch {
+    flex: 1;
+    min-width: 150px;
+    padding: 15px;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+}
+
+.primary { background-color: var(--primary-color); }
+.secondary { background-color: var(--secondary-color); }
+.accent { background-color: var(--accent-color); color: #333; text-shadow: none; }
+
+.wireframe-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.wireframe-box {
+    border: 2px dashed var(--primary-color);
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+}
+
+.mobile-wireframe { width: 250px; margin: 0 auto; }
+.desktop-wireframe { width: 100%; }
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 0.9em;
+    color: #666;
+}

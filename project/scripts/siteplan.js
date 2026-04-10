@@ -1,0 +1,1 @@
+lastModified.textContent = document.lastModified;
