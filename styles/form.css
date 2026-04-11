@@ -23,6 +23,7 @@ body {
   background: #d3cdd1;
   border-radius: 5px;
   overflow: hidden;
+  text-align: center;
 }
 
 /* Header */
