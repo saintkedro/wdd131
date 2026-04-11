@@ -25,6 +25,10 @@ body {
   overflow: hidden;
 }
 
+h2 {
+  text-align: center;
+}
+
 /* Header */
 h1 {
   background: #3b0a2a;
