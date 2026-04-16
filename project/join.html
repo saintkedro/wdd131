@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join the Circuit | Uyo Smash Club</title>
+    <meta name="description" content="Sign up for the Uyo Smash Club to start learning tennis or join the competitive regional ladder.">
+    <meta name="author" content="Kingsley Isong">
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="scripts/main.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <img src="images/uyo-smash-logo.webp" alt="Uyo Smash Club Logo" class="club-logo" loading="eager">
+        <h1>Uyo Smash Club</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="hub.html">Academy & Ladder</a></li>
+            <li><a href="join.html">Join Us</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1>Member Registration</h1>
+
+        <form class="review-form" method="get" action="thanks.html">
+
+            <label for="membership">Membership Type*</label>
+            <select id="membership" name="membership" required>
+                <option value="" disabled selected>Select an option ...</option>
+                <option value="beginner">JJC (Beginner) - I want to learn</option>
+                <option value="intermediate">Street King (Intermediate)</option>
+                <option value="pro">Pro (Coach)</option>
+            </select>
+
+            <label>Self-Assessed Skill Level*</label>
+            <div class="rating">
+                <label for="lvl1">
+                    <input type="radio" id="lvl1" name="skill" value="1" required>
+                    &star; (Novice)
+                </label>
+
+                <label for="lvl2">
+                    <input type="radio" id="lvl2" name="skill" value="2" required>
+                    &star;&star;
+                </label>
+
+                <label for="lvl3">
+                    <input type="radio" id="lvl3" name="skill" value="3" required>
+                    &star;&star;&star; (Competitive)
+                </label>
+            </div>
+
+            <label for="startDate">Preferred Start Date*</label>
+            <input type="date" id="startDate" name="startDate" required>
+
+            <label>Which areas are you interested in? <span>(Check all that apply)*</span></label>
+            <div class="checkbox-group">
+                <label for="coaching"> 
+                    <input type="checkbox" id="coaching" name="interests" value="Coaching"> Private Coaching
+                </label>
+
+                <label for="ladder">
+                    <input type="checkbox" id="ladder" name="interests" value="Ladder"> Competitive Ladder
+                </label>
+
+                <label for="stadium">
+                    <input type="checkbox" id="stadium" name="interests" value="Stadium"> Stadium Court Access
+                </label>
+
+                <label for="fitness">
+                    <input type="checkbox" id="fitness" name="interests" value="Fitness"> Tennis Fitness
+                </label>
+            </div>
+
+            <label for="goals">Tennis Goals or Experience <span>(Optional)</span></label>
+            <textarea id="goals" name="goals" rows="4" placeholder="Tell us about your tennis journey..."></textarea>
+
+            <label for="username">Full Name*</label>
+            <input type="text" id="username" name="username" required>
+
+            <input type="submit" value="Complete Registration">
+
+        </form>
+
+        <footer>
+            <p>&copy; <span id="currentyear"></span> Kingsley E. Isong | Nigeria</p>
+            <p>Last Modified: <span id="lastModified"></span></p>
+            <p><a href="join.html">Become a Member</a></p>
+        </footer>
+    </div>
+</body>
+</html>

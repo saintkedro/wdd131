@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academy & Ladder | Uyo Smash Club</title>
+    <meta name="description" content="Meet our professional coaches and see the top 10 tennis players in Uyo.">
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="scripts/main.js" defer></script>
+</head>
+<body>
+    <header>
+        <img src="images/uyo-smash-logo.webp" alt="Uyo Smash Club Logo" class="club-logo" loading="eager">
+        <h1>Uyo Smash Club</h1></header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="hub.html">Academy</a></li>
+            <li><a href="join.html">Join Us</a></li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        <section>
+            <h2 class="section-title">Professional Coaches</h2>
+            <div id="pro-grid" class="grid">
+                </div>
+        </section>
+
+        <section class="ladder-section">
+            <h2 class="section-title">Uyo Top 10 Ladder</h2>
+            <div class="card">
+                <table class="ladder-table">
+                    <thead>
+                        <tr>
+                            <th>Rank</th>
+                            <th>Player</th>
+                            <th>Points</th>
+                        </tr>
+                    </thead>
+                    <tbody id="ladder-body">
+                        </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Kingsley E. Isong</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+        <p><a href="join.html">Become a Member</a></p>
+    </footer>
+</body>
+</html>
